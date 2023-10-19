@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment-Renovetion-Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./tablet.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Версія для планшета та комп'ютера -->
+            <nav class="navigation">
+                <a href="./index.html" class="logo-link">Apartment <span class="web-logo">Website</span></a>
+
+                <!-- Меню -->
+                <button class="burder-type">
+                    <svg class="burger-svg" width="32" height="22">
+                        <use class="burger-icon" href="./Image/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </button>
+
+                <!-- Навігація -->
+                <ul class="header-nav">
+                    <li class="header-list">
+                        <a class="header-link" href="">Про компанію</a>
+                    </li>
+                    <li class="header-list">
+                        <a class="header-link" href="">Послуги</a>
+                    </li>
+                    <li class="header-list">
+                        <a class="header-link" href="">Дізнатися ціну</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Контакти -->
+            <address>
+                <ul class="contacts">
+                    <li class="contacts-list">
+                        <a href="#" class="contacts-link">
+                            <svg width="32" height="22">
+                                <use href="./Image/symbol-defs.svg#icon-envelop"></use>
+                            </svg>
+                            <span>mail</span>
+                        </a>
+                    </li>
+                    <li class="contacts-list">
+                        <a href="#" class="contacts-link">
+                            <svg width="32" height="22">
+                                <use href="./Image/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            <span>number</span>
+                        </a>
+                    </li>
+                </ul>
+            </address>
+
+            <!--Мобільна версія -->
+            <div class="backdrop is-hidden">
+                <div class="mobile-menu">
+        <button class="menu-close">
+            <svg class="svg-menu-close" width="8" height="8">
+            <use class="icon-close" href="./Image/symbol-defs.svg#icon-cross"></use>
+            </svg>
+        </button>
+
+<!-- Навігація мобільного меню -->
+<nav class="mobile-navigation">
+ <ul class="header-nav-mobile">
+    <li class="header-list-mobile-menu">
+        <a class="header-link-mobile-menu" href="">Про компанію</a>
+    </li>
+    <li class="header-list-mobile-menu">
+        <a class="header-link-mobile-menu" href="">Послуги</a>
+    </li>
+    <li class="header-list-mobile-menu">
+        <a class="header-link-mobile-menu" href="">Дізнатися ціну</a>
+    </li>
+ </ul>
+</nav>
+
+<!-- Контакти мобільного меню -->
+<div class="mobile-menu-contacts">
+    <ul class="contacts-mobile-menu">
+        <li class="contacts-list-mobile-menu">
+            <a class="contacts-link-mobile-menu" href="#" class="contacts-link">
+                <svg width="32" height="22">
+                    <use href="./Image/symbol-defs.svg#icon-envelop"></use>
+                </svg>
+                <span>mail</span>
+            </a>
+        </li>
+        <li class="contacts-list-mobile-menu">
+            <a class="contacts-link-mobile-menu" href="#" class="contacts-link">
+                <svg width="32" height="22">
+                    <use href="./Image/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <span>number</span>
+            </a>
+        </li>
+    </ul>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+</body>
+</html>
