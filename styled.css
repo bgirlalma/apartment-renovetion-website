@@ -36,9 +36,9 @@ h1, h2, h3, h4, h5, h6{
     padding: 0;
 };
 
-:root{
+/* :root{
 
-}
+} */
 
 .container{
     max-width: 1400px;
@@ -49,3 +49,23 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
+.slider {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Скрываем все слайды */
+    transition: opacity 0.5s; /* Добавляем переход для плавного появления */
+}
+
+.slide.active {
+    opacity: 1; /* Отображаем активный слайд */
+}
