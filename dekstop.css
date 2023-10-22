@@ -1,0 +1,82 @@
+@media screen and (min-width: 1200px) {
+    .burder-type {
+        display: none;
+    }
+
+    .backdrop {
+       display: none;
+    }
+
+    .hero-mobile{
+        display: none;
+    }
+
+    .container{
+        max-width: 1200px;
+        padding: 20px 20px 0 20px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        /* Header */
+        .navigation{
+            display: flex;
+        }
+    
+        .logo-link{
+            text-decoration: none;
+            font-family: 'Cormorant Garamond';
+           font-size: 60px;
+           color: rgb(235, 105, 12);
+        }
+    
+        .web-logo{
+            color: rgb(8, 236, 236);
+        }
+    
+        .header-nav{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+    
+        .header-list{
+           margin-left: 30px;
+        }
+    
+        .header-list:first-child{
+            margin-left: 60px;
+        }
+    
+        .header-link{
+            text-decoration: none;
+            font-family: 'Cormorant Garamond';
+           font-size: 25px;
+           color: antiquewhite;
+        }
+    
+        .contacts{
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+    
+        .contacts-list{
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+    
+        .contacts-link{
+            text-decoration: none;
+            font-family: 'Cormorant Garamond';
+           font-size: 25px;
+           color: antiquewhite;
+           margin-left: 20px;
+        }
+
+}

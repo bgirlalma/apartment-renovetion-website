@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ремонт та оздоблення квартир</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styled.css">
     <link rel="stylesheet" href="./mobile.css">
     <link rel="stylesheet" href="./tablet.css">
     <link rel="stylesheet" href="./dekstop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
@@ -25,7 +27,6 @@
                         <use class="burger-icon" href="./Image/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
-<hr/>
                 <!-- Навігація -->
                 <ul class="header-nav none">
                     <li class="header-list">
@@ -45,7 +46,7 @@
                 <ul class="contacts">
                     <li class="contacts-list">
                         <a href="#" class="contacts-link">
-                            <svg width="32" height="22">
+                            <svg width="32" height="22" fill="antiquewhite" >
                                 <use href="./Image/symbol-defs.svg#icon-envelop"></use>
                             </svg>
                             <span>mail</span>
@@ -53,7 +54,7 @@
                     </li>
                     <li class="contacts-list">
                         <a href="#" class="contacts-link">
-                            <svg width="32" height="22">
+                            <svg width="32" height="22" fill="antiquewhite" >
                                 <use href="./Image/symbol-defs.svg#icon-phone"></use>
                             </svg>
                             <span>number</span>
@@ -115,38 +116,55 @@
 
     <!-- Hero Section start -->
     <section class="section-hero">
-        <div class="slider">
-            <div class="slide slide-one">
-                <img src="./Image/IMG-8d967e801d69a2d5d61e6e527cb4dff7-V.jpg" alt="">
-            </div>
-            <div class="slide slide-two">
-                <img src="./Image/IMG-bcf7f1dc325927f3dcffba6e534384a8-V.jpg" alt="">
-            </div>
-            <div class="slide slide-three">
-                <img src="./Image/IMG-6243339de3bd165002322e8e6645031e-V.jpg" alt="">
-            </div>
-            <div class="slide slide-four">
-                <img src="./Image/IMG-994beb8ac4caaba9c1da9eb4d8e3cb23-V.jpg" alt="">
-            </div>
-            <div class="slide slide-four">
-                <img src="./Image/IMG-4aeec6056d6647420b98b8c87ca8c4b3-V.jpg" alt="">
-            </div>
-            <div class="slide slide-four">
-                <img src="./Image/IMG-7ced417b628dd3b60feb20240a8d5643-V.jpg" alt="">
-            </div>
-            <div class="slide slide-four">
-                <img src="./Image/IMG-b4096124ce91be56f748666ad8a4abe4-V.jpg" alt="">
-            </div>
-            <div class="slide slide-four">
-                <img src="./Image/IMG-10f6b7adf1e1e4811e8c6444cdb37f27-V.jpg" alt="">
-            </div>
+        <div class="slider-container">
+   <div id="slide">
+    <div class="item-slide" style="background-image: url(/Image/wall-decoration.jpg);">
+        <div class="content">
+            <h2 class="content-title">Оформлення стін</h2>
+            <p class="content-desc">Фарбування, поклейка обоїв, шпаклівка стін, мозаїки та плитки, утеплення та звукоізоляція тощо</p>
+        </div></div>
 
-            <div class="slider-btn">
-                <button id="type-prev"></button>
-                <button id="type-next"></button>
-            </div>
+        <div class="item-slide" style="background-image: url(/Image/figured-ceiling.jpg);">
+            <div class="content">
+                <h2 class="content-title">Оформлення<br/>стель різної складності</h2>
+                <p class="content-desc">Фігурні, пластикові панелі та листи, акустичні, тощо</p>
+            </div></div>
+
+    <div class="item-slide" style="background-image: url(/Image/bathroom-grey.jpg);">
+    <div class="content">
+        <h2 class="content-title">Ванна кімната під ключ</h2>
+        <p class="content-desc">Укладання плитки, кахлю, проведення(заміна) водопроводних труб,установка сантехніки, проведення додаткових електричних робіт(заміна електрики), заміна підлоги, тощо</p>
+    </div>
+    </div>
+    <div class="item-slide" style="background-image: url(/Image/bathroom.jpg);">
+        <div class="content">
+            <h2 class="content-title">Кухня під ключ</h2>
+            <p class="content-desc">Заміна(оновлення) раковини, змішувачів, встановлення нових приладів, укладання плитки, покриття стін і стелі, заміна електрики, проведення додаткового освітлення, покриття підлоги, збільшення площі кухні, тощо</p>
+        </div></div>
+
+    <div class="item-slide" style="background-image: url(/Image/hallway.jpg);">
+        <div class="content">
+            <h2 class="content-title">Коридор</h2>
+            <p class="content-desc">Фарбування стін і стелі в коридорі, покриття підлоги, встановлення освітлення, заміна електрики, установка дзеркал та рам, встановлення плінтусу, встановлення обладнання безпеки, тощо</p>
+        </div></div>
+
+    <div class="slider-btn">
+        <button id="type-prev"><i class="fa-solid fa-angles-left"></i></button>
+        <button id="type-next"><i class="fa-solid fa-angles-right"></i></button>
+    </div>
+   </div>
+       </div>
+
+<!-- Mobile version -->
+       <div class="hero-mobile">
+<div class="mobile-content">
+    <h1 class="hero-mobile-title">Компания Ріо</h1>
+    <p class="hero-mobile-desc">Спеціалізується на проведенні ремонтних робіт квартир та будинків різної складності.</p>
+    <button class="hero-mobile-type">Отримати консультацію</button>
+</div>
        </div>
     </section>
-    
+    <!-- <script src="./Js/modal.js"></script> -->
+    <script src="./Js/slider.js"></script>
 </body>
 </html>

@@ -1,34 +1,14 @@
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 419px){
     .container {
         width: 100%;
+        margin-bottom: 20px;
     }
-    .navigation {
-    }
-    .logo-link {
-    }
-    .web-logo {
-    }
-    .burder-type {
-    }
-    .burger-svg {
-    }
-    .burger-icon {
-    }
-    .header-nav.none {
+    .header-nav {
         display: none;
     }
     .address-contacts.none {
         display: none;
-    }
-    .header-list {
-    }
-    .header-link {
-    }
-    .contacts {
-    }
-    .contacts-list {
-    }
-    .contacts-link {
     }
     .backdrop {
         position: fixed;
@@ -55,28 +35,74 @@
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
     }
-    .menu-close {
+
+    /* Hero section */
+    .slider-container{
+        display: none;
     }
-    .svg-menu-close {
+
+    .hero-mobile{
+        height: 400px;
     }
-    .icon-close {
+   
+    .mobile-content {
+        width: 300px;
     }
-    .mobile-navigation {
+
+    .hero-mobile-title {
+        font-size: 18px;
     }
-    .header-nav-mobile {
+    .hero-mobile-desc {
+        font-size: 14px;
     }
-    .header-list-mobile-menu {
+    .hero-mobile-type {
+        font-size: 12px;
     }
-    .header-link-mobile-menu {
+}
+@media screen and (min-width: 420px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin-bottom: 20px;
     }
-    .mobile-menu-contacts {
+    .header-nav.none {
+        display: none;
     }
-    .contacts-mobile-menu {
+    .address-contacts.none {
+        display: none;
     }
-    .contacts-list-mobile-menu {
+    .backdrop {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(46, 47, 66, 0.4);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .contacts-link-mobile-menu {
+    .backdrop.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
     }
-    .section-hero {
+    .mobile-menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: #FCFCFC;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
     }
+
+    /* Hero section */
+    .slider-container{
+        display: none;
+    }
+   
+    .mobile-content {
+        width: 400px;
+    }
+   
 }

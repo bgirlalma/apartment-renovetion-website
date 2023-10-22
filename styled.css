@@ -1,13 +1,8 @@
-html{
-    box-sizing: border-box;
-};
-
-body {
-    font-family: 'Roboto', sans-serif;
+body{
+    font-family: 'Cormorant Garamond', 'Pathway Gothic One', sans-serif;
     font-style: normal;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), lightgray;
-    background-size: 50% 100%, cover;
-    background-repeat: no-repeat;
+    background-color: #111;
+    box-sizing: border-box;
 };
 
 *,
@@ -48,24 +43,186 @@ h1, h2, h3, h4, h5, h6{
     margin-right: auto;
 }
 
-
-.slider {
-    width: 500px;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
+.slider-container{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin-top: 20px;
+width: 1000px;
+height: 600px;
+background-color: #c2c2d6;
+box-shadow: 0 30px 50px #dbdbdb;
+border-radius: 20px;
+}
+#slide{
+    width: max-content;
+    margin-top: 50px;
+}
+.item-slide{
+width: 200px;
+height: 300px;
+background-position: 50% 50%;
+display: inline-block;
+transition: 0.5s;
+background-size: cover;
+position: absolute;
+z-index: 1;
+top: 50%;
+transform: translate(0, -50%);
+border-radius: 20px;
 }
 
-.slide {
-    width: 500px;
-    height: 300px;
+.item-slide:nth-child(1),
+.item-slide:nth-child(2){
+    left: 0;
+    top: 0;
+    transform: translate(0,0);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.item-slide:nth-child(3){
+    left: 40%;
+}
+
+.item-slide:nth-child(4){
+    left: calc(40% + 220px);
+}
+
+.item-slide:nth-child(5){
+    left: calc(40% + 440px);
+}
+
+.item-slide:nth-child(n + 6){
+    left: calc(40% + 660px);
+    opacity: 0;
+}
+
+.item-slide .content{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: 300px;
+    text-align: left;
+    padding: 0;
+    color: #f7f3f3;
+    transform: translate(0, -50%);
+    display: none;
+}
+
+.item-slide:nth-child(2) .content{
+    display: block;
+    z-index: 111111;
+}
+
+.content-title{
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+
+.content-desc{
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.4s 1 forwards;
+}
+
+@keyframes showcontent {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter: blur(0);
+    }
+}
+
+.slider-btn{
+    position: absolute;
+    bottom: 30px;
+    z-index: 222222;
+    text-align: center;
+    width: 100%;
+}
+
+#type-prev{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    background-color: 	#FAFAD2;
+    color: #cc0000;
+    margin-right: 10px;
+}
+
+#type-next{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    background-color: 	#FAFAD2;
+    color: #cc0000;
+}
+
+
+/* Hero mobile version */
+.hero-mobile {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(https://www.remontbp.com/wp-content/uploads/2017/11/%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B5-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D1%85-%D0%BE%D0%BA%D0%BE%D0%BD-%D0%B7%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-%D1%83%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D1%82-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE.jpg);
+}
+
+.hero-mobile::before{
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0; /* Скрываем все слайды */
-    transition: opacity 0.5s; /* Добавляем переход для плавного появления */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.slide.active {
-    opacity: 1; /* Отображаем активный слайд */
+.mobile-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 0 20px;
+}
+.hero-mobile-title {
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-size: 24px;
+    color: antiquewhite;
+
+    margin: 0;
+}
+.hero-mobile-desc {
+    font-family: 'Cormorant Garamond';
+    font-size: 18px;
+    color: antiquewhite;
+    margin: 10px 0 20px;
+}
+.hero-mobile-type {
+    font-family: 'Cormorant Garamond';
+    font-size: 14px;
+    color: rgb(37, 25, 9);
+
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(202, 193, 193);
 }
