@@ -25,4 +25,4 @@ function closeModal(){
     modalMenu.classList.add('is-hidden');
     backdrop.classList.add('is-hidden');
 }
-})
+});

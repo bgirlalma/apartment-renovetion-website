@@ -67,7 +67,7 @@
             <div class="backdrop is-hidden">
                 <div class="mobile-menu">
         <button class="menu-close">
-            <svg class="svg-menu-close" width="8" height="8">
+            <svg class="svg-menu-close" width="12" height="12">
             <use class="icon-close" href="./Image/symbol-defs.svg#icon-cross"></use>
             </svg>
         </button>
@@ -92,7 +92,7 @@
             <ul class="contacts-mobile-menu">
                 <li class="contacts-list-mobile-menu">
                     <a class="contacts-link-mobile-menu" href="#" class="contacts-link">
-                        <svg width="32" height="22">
+                        <svg class="svg-mobile" width="32" height="22" fill="blue">
                             <use href="./Image/symbol-defs.svg#icon-envelop"></use>
                         </svg>
                         <span>mail</span>
@@ -100,7 +100,7 @@
                 </li>
                 <li class="contacts-list-mobile-menu">
                     <a class="contacts-link-mobile-menu" href="#" class="contacts-link">
-                        <svg width="32" height="22">
+                        <svg class="svg-mobile" width="32" height="22" fill="blue">
                             <use href="./Image/symbol-defs.svg#icon-phone"></use>
                         </svg>
                         <span>number</span>
@@ -161,12 +161,45 @@
          <div class="mobile-content">
              <h1 class="hero-mobile-title">Компания Ріо</h1>
              <p class="hero-mobile-desc">Спеціалізується на проведенні ремонтних робіт квартир та будинків різної складності.</p>
-             <button class="hero-mobile-type">Отримати консультацію</button>
+             <button id="hero-type" class="hero-mobile-type">Отримати консультацію</button>
          </div>
                 </div>
-    </div>
+
+                <!-- Modal Hero start -->
+                <div class="backdrop-hero is-hidden-hero">
+                    <div class="hero-mobile-menu">
+            <button class="hero-menu-close" type="button">
+                <svg class="hero-svg-menu-close" width="12" height="12">
+                <use class="icon-close" href="./Image/symbol-defs.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <form class="hero-form">
+                <label class="hero-label" for="name">Ваше ім'я</label>
+                <input class="hero-input" id="name" type="text">
+                <label class="hero-label" for="number">Номер телефону</label>
+                <input class="hero-input plus" id="number" type="number">
+                <button class="type-submit" type="submit">Відправити</button>
+            </form>
+            </div>
+            </div>
+                <!-- Modal Hero end -->
     </section>
+
+    <!-- About Company start -->
+    <section class="about-company">
+        <div class="container">
+            <h2 class="about-company-title">Про компанию</h2>
+            <p class="about-company-desc">mkednjekwellokrfnjvmdc,lsx.;;d,c</p>
+
+            <div class="advantages">
+                <h2 class="advantages-title">Наші переваги</h2>
+                <div>PNG photo с подписью 4-5 пункта</div>
+            </div>
+        </div>
+    </section>
+    <!-- About Company end -->
     <script src="./Js/modal-burger.js"></script>
     <script src="./Js/slider.js"></script>
+    <script src="./Js/hero-modal-menu.js"></script>
 </body>
 </html>
