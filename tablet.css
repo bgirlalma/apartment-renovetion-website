@@ -9,19 +9,9 @@
     }
 
     /* Header */
-    .navigation{
-        display: flex;
-    }
 
     .logo-link{
-        text-decoration: none;
-        font-family: 'Cormorant Garamond';
        font-size: 40px;
-       color: rgb(235, 105, 12);
-    }
-
-    .web-logo{
-        color: rgb(8, 236, 236);
     }
 
     .header-nav{

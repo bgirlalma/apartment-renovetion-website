@@ -22,8 +22,8 @@
                 <a href="./index.html" class="logo-link">Р<span class="web-logo">і</span>O</a>
 
                 <!-- Меню -->
-                <button class="burder-type">
-                    <svg class="burger-svg" width="32" height="22">
+                <button class="burder-type" id="open-menu">
+                    <svg class="burger-svg" width="32" height="32">
                         <use class="burger-icon" href="./Image/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
@@ -116,55 +116,57 @@
 
     <!-- Hero Section start -->
     <section class="section-hero">
+    <div class="container hero">
         <div class="slider-container">
-   <div id="slide">
-    <div class="item-slide" style="background-image: url(/Image/wall-decoration.jpg);">
-        <div class="content">
-            <h2 class="content-title">Оформлення стін</h2>
-            <p class="content-desc">Фарбування, поклейка обоїв, шпаклівка стін, мозаїки та плитки, утеплення та звукоізоляція тощо</p>
-        </div></div>
-
-        <div class="item-slide" style="background-image: url(/Image/figured-ceiling.jpg);">
-            <div class="content">
-                <h2 class="content-title">Оформлення<br/>стель різної складності</h2>
-                <p class="content-desc">Фігурні, пластикові панелі та листи, акустичні, тощо</p>
-            </div></div>
-
-    <div class="item-slide" style="background-image: url(/Image/bathroom-grey.jpg);">
-    <div class="content">
-        <h2 class="content-title">Ванна кімната під ключ</h2>
-        <p class="content-desc">Укладання плитки, кахлю, проведення(заміна) водопроводних труб,установка сантехніки, проведення додаткових електричних робіт(заміна електрики), заміна підлоги, тощо</p>
+            <div id="slide">
+             <div class="item-slide" style="background-image: url(/Image/wall-decoration.jpg);">
+                 <div class="content">
+                     <h2 class="content-title">Оформлення стін</h2>
+                     <p class="content-desc">Фарбування, поклейка обоїв, шпаклівка стін, мозаїки та плитки, утеплення та звукоізоляція тощо</p>
+                 </div></div>
+         
+                 <div class="item-slide" style="background-image: url(/Image/figured-ceiling.jpg);">
+                     <div class="content">
+                         <h2 class="content-title">Оформлення<br/>стель різної складності</h2>
+                         <p class="content-desc">Фігурні, пластикові панелі та листи, акустичні, тощо</p>
+                     </div></div>
+         
+             <div class="item-slide" style="background-image: url(/Image/bathroom-grey.jpg);">
+             <div class="content">
+                 <h2 class="content-title">Ванна кімната під ключ</h2>
+                 <p class="content-desc">Укладання плитки, кахлю, проведення(заміна) водопроводних труб,установка сантехніки, проведення додаткових електричних робіт(заміна електрики), заміна підлоги, тощо</p>
+             </div>
+             </div>
+             <div class="item-slide" style="background-image: url(/Image/bathroom.jpg);">
+                 <div class="content">
+                     <h2 class="content-title">Кухня під ключ</h2>
+                     <p class="content-desc">Заміна(оновлення) раковини, змішувачів, встановлення нових приладів, укладання плитки, покриття стін і стелі, заміна електрики, проведення додаткового освітлення, покриття підлоги, збільшення площі кухні, тощо</p>
+                 </div></div>
+         
+             <div class="item-slide" style="background-image: url(/Image/hallway.jpg);">
+                 <div class="content">
+                     <h2 class="content-title">Коридор</h2>
+                     <p class="content-desc">Фарбування стін і стелі в коридорі, покриття підлоги, встановлення освітлення, заміна електрики, установка дзеркал та рам, встановлення плінтусу, встановлення обладнання безпеки, тощо</p>
+                 </div></div>
+         
+             <div class="slider-btn">
+                 <button id="type-prev"><i class="fa-solid fa-angles-left"></i></button>
+                 <button id="type-next"><i class="fa-solid fa-angles-right"></i></button>
+             </div>
+            </div>
+                </div>
+         
+         <!-- Mobile version -->
+                <div class="hero-mobile">
+         <div class="mobile-content">
+             <h1 class="hero-mobile-title">Компания Ріо</h1>
+             <p class="hero-mobile-desc">Спеціалізується на проведенні ремонтних робіт квартир та будинків різної складності.</p>
+             <button class="hero-mobile-type">Отримати консультацію</button>
+         </div>
+                </div>
     </div>
-    </div>
-    <div class="item-slide" style="background-image: url(/Image/bathroom.jpg);">
-        <div class="content">
-            <h2 class="content-title">Кухня під ключ</h2>
-            <p class="content-desc">Заміна(оновлення) раковини, змішувачів, встановлення нових приладів, укладання плитки, покриття стін і стелі, заміна електрики, проведення додаткового освітлення, покриття підлоги, збільшення площі кухні, тощо</p>
-        </div></div>
-
-    <div class="item-slide" style="background-image: url(/Image/hallway.jpg);">
-        <div class="content">
-            <h2 class="content-title">Коридор</h2>
-            <p class="content-desc">Фарбування стін і стелі в коридорі, покриття підлоги, встановлення освітлення, заміна електрики, установка дзеркал та рам, встановлення плінтусу, встановлення обладнання безпеки, тощо</p>
-        </div></div>
-
-    <div class="slider-btn">
-        <button id="type-prev"><i class="fa-solid fa-angles-left"></i></button>
-        <button id="type-next"><i class="fa-solid fa-angles-right"></i></button>
-    </div>
-   </div>
-       </div>
-
-<!-- Mobile version -->
-       <div class="hero-mobile">
-<div class="mobile-content">
-    <h1 class="hero-mobile-title">Компания Ріо</h1>
-    <p class="hero-mobile-desc">Спеціалізується на проведенні ремонтних робіт квартир та будинків різної складності.</p>
-    <button class="hero-mobile-type">Отримати консультацію</button>
-</div>
-       </div>
     </section>
-    <!-- <script src="./Js/modal.js"></script> -->
+    <script src="./Js/modal-burger.js"></script>
     <script src="./Js/slider.js"></script>
 </body>
 </html>
