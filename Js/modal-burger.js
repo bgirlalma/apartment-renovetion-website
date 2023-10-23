@@ -13,23 +13,16 @@ const backdrop = document.querySelector('.backdrop');
 // вішаємо слухача подій
 openButton.addEventListener('click', openModal);
 closeButton.addEventListener('click', closeModal);
-backdrop.addEventListener('click', closeOutsideModal);
 
 // функція вікриття модалки
 function openModal() {
-    console.log('Модальное окно открыто');
     modalMenu.classList.remove('is-hidden');
+    backdrop.classList.remove('is-hidden');
 }
 
 // функція закриття модального вікна
 function closeModal(){
-    console.log('Модальное окно закрыто');
     modalMenu.classList.add('is-hidden');
-}
-
-function closeOutsideModal(event) {
-    if (event.target === backdrop) {
-        closeModal();
-    }
+    backdrop.classList.add('is-hidden');
 }
 })
