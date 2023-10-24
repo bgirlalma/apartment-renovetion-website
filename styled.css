@@ -425,3 +425,82 @@ border-radius: 20px;
 /* Hero Modal end */
 
  /* About Company start  */
+ .about-company {
+    max-width: 320px;
+    padding: 0 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.about-company-title {
+    font-family: 'Cormorant Garamond';
+    font-size: 20px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 20px;
+}
+.about-company-desc {
+    font-family: 'Cormorant Garamond';
+    font-size: 18px;
+    color: #efeff3;
+    margin: 0;
+    margin-top: 20px;
+}
+.about-company-desc-recording.desc-none {
+    font-family: 'Cormorant Garamond';
+    font-size: 18px;
+    color: #efeff3;
+    margin: 0;
+    margin-top: 20px;
+    display: none;
+}
+
+.hero-mobile-type.type-none {
+    margin-top: 20px;
+    display: none;
+}
+
+.advantages {
+    
+}
+.advantages-title {
+    font-family: 'Cormorant Garamond';
+    font-size: 20px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 20px;
+}
+.advantages-container {
+    max-width: 300px;
+}
+.advantages-info {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+.advantages-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    list-style: none;
+    color: #c2c2d6;
+}
+.advantages-svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    fill: #c2c2d6;
+}
+
+.advantages-list-title {
+    font-family: 'Cormorant Garamond';
+    font-size: 12px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
