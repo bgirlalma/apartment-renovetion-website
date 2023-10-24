@@ -10,6 +10,16 @@ const closeButton = document.querySelector('.menu-close');
 const modalMenu = document.querySelector('.mobile-menu');
 
 const backdrop = document.querySelector('.backdrop');
+
+
+// Закриття модального вікна при натискані на навігацію
+const navLink = document.querySelectorAll('.header-link-mobile-menu');
+navLink.forEach(function(navLink){
+    navLink.addEventListener('click', function(){
+        closeModal()
+    })
+})
+
 // вішаємо слухача подій
 openButton.addEventListener('click', openModal);
 closeButton.addEventListener('click', closeModal);

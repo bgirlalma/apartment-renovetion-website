@@ -1,13 +1,18 @@
 
 @media screen and (max-width: 419px){
     .container .hero {
-        width: 320px;
+        max-width: 320px;
     }
 
     .navigation{
         justify-content: space-between;
-        width: 320px;
         padding: 10px 10px 0 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-link-mobile-menu.header-none{
+        display: none;
     }
 
     .header-nav {
@@ -23,8 +28,9 @@
     }
 
     .hero-mobile{
-        width: 320px;
         height: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
    
     .mobile-content {
@@ -43,12 +49,24 @@
 }
 @media screen and (min-width: 420px) and (max-width: 767px) {
     .container.hero {
-        max-width: 380px;
+        /* max-width: 380px; */
+        margin-left: auto;
+        margin-right: auto;
     }
     .navigation{
         justify-content: space-between;
-        max-width: 380px;
         padding: 10px 10px 0 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-link{
+       font-size: 40px;
+    }
+
+    .burger-svg{
+        width: 40px;
+        height: 40px;
     }
 
     .header-nav.none {
@@ -77,6 +95,10 @@
         margin-bottom: 0;
     }
 
+    .header-link-mobile-menu.header-none{
+        display: none;
+    }
+
     .contacts-mobile-menu{
         padding: 0;
     }
@@ -87,22 +109,74 @@
     }
 
     .hero-mobile{
-        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
    
     .mobile-content {
-        width: 400px;
+        width: 450px;
+    }
+
+    .hero-mobile-title {
+        font-size: 28px;
+    }
+
+    .hero-mobile-desc {
+        font-size: 20px;
+    }
+
+    .hero-mobile-type {
+        font-size: 18px;
+        padding: 15px 15px;
     }
 
     /* Modal Hero start */
     .hero-mobile-menu {
         width: 320px;
-        height: 400px;
+        height: 500px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
     }
+    /* Modal Hero end */
+
+    /* About section start */
+    .about-company-title {
+        font-size: 30px;
+    }
+
+    .about-company-desc {
+        font-size: 20px;
+    }
+
+    .advantages-container {
+        max-width: unset;
+    }
+    .advantages-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .advantages-title {
+        font-size: 30px;
+    }
+
+    .advantages-svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        fill: #c2c2d6;
+    }
+
+    .advantages-list-title {
+        font-size: 18px;
+    }
    
+    .advantages-list {
+        margin-bottom: unset;
+        padding: 10px;
+    }
 }

@@ -57,7 +57,6 @@
 
     /* Hero slider */
     .slider-container{
-       margin-top: 20px;
         width: 700px;
         height: 500px;
         box-shadow: 0 20px 20px #dbdbdb;
@@ -115,4 +114,7 @@
     .hero-mobile{
         display: none;
     }
+
+    /* About start */
+ 
 }
