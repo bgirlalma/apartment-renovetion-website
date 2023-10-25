@@ -116,5 +116,65 @@
     }
 
     /* About start */
- 
+
+    .about-company{
+        padding: 0;
+    }
+    .about{
+        display: inline-block;
+    }
+
+    .about-company-title {
+        font-size: 35px;
+    }
+
+    .about-company-desc {
+        font-size: 25px;
+    }
+
+    .about-company-desc-recording{
+        display: unset;
+    }
+
+    .about-company-desc-recording{
+        font-family: 'Cormorant Garamond';
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .advantages-container{
+        max-width: unset;
+    }
+
+    .advantages-info{
+        display: flex;
+    }
+
+    .advantages-title {
+        font-size: 35px;
+    }
+
+    .advantages-svg {
+        width: 50px;
+        height: 50px;
+        margin-right: unset;
+        margin-bottom: 15px;
+        fill: #c2c2d6;
+        
+    }
+
+    .advantages-list-title {
+        font-size: 20px;
+    }
+   
+    .advantages-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: unset;
+        margin-right: 20px;
+    }
+
+    .advantages-list:last-child{
+        margin-right: 0;
+    }
 }
