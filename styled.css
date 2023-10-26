@@ -160,11 +160,7 @@ h1, h2, h3, h4, h5, h6{
 /* Slider start */
 .slider-container{
     position: relative;
-/* top: 50%;
-left: 50%;
-transform: translate(-50%, -50%); */
-/* margin-top: 20px; */
-width: 1000px;
+width: 700px;
 height: 600px;
 background-color: #c2c2d6;
 box-shadow: 0 30px 50px #dbdbdb;
@@ -213,6 +209,7 @@ border-radius: 20px;
 .item-slide:nth-child(n + 6){
     left: calc(40% + 660px);
     opacity: 0;
+    display: none;
 }
 
 .item-slide .content{
@@ -349,7 +346,7 @@ border-radius: 20px;
     color: rgb(233, 228, 222);
 }
 
-/* Modal Hero Mobile start */
+/* Modal Hero  start */
 
 .backdrop-hero {
     position: fixed;
@@ -407,7 +404,7 @@ border-radius: 20px;
 }
 
 .hero-input:hover{
-    border: 1px solid #d8670b;
+    border: 2px solid #d8670b;
 }
 
 .hero-input.plus{
@@ -415,12 +412,15 @@ border-radius: 20px;
 }
 
 .type-submit{
+    font-family: 'Cormorant Garamond';
+    font-size: 16px;
     border-radius: 20px;
     max-width: 150px;
     padding: 7px;
     border: none;
     background-color: #d8670b;
     color: #f1e9e9;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
 }
 
 .type-submit:hover{
@@ -451,19 +451,6 @@ border-radius: 20px;
     color: #efeff3;
     margin: 0;
     margin-top: 20px;
-}
-.about-company-desc-recording.desc-none {
-    font-family: 'Cormorant Garamond';
-    font-size: 18px;
-    color: #efeff3;
-    margin: 0;
-    margin-top: 20px;
-    display: none;
-}
-
-.hero-mobile-type.type-none {
-    margin-top: 20px;
-    display: none;
 }
 
 .advantages-title {

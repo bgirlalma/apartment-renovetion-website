@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1180px) {
     .container{
         max-width: 768px;
         padding: 20px 20px 0 20px;
@@ -100,8 +100,6 @@
                 height: 40px;
             }
             
-            
-
         .burder-type {
             display: none;
         }
@@ -113,6 +111,48 @@
     /* Hero mobile */
     .hero-mobile{
         display: none;
+    }
+
+    /* Hero modal and nav "Дізнатися ціну" start */
+    .hero-mobile-menu {
+        position: fixed;
+        width: 450px;
+        height: 300px;
+        top: 23%;
+        left: 32%;
+        transform: translate(-23%,-32%);
+        transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: rgb(239, 239, 225);
+        border-radius: 20px;
+    }
+
+    .hero-menu-close {
+        border: none;
+        background-color: rgba(251, 115, 4, 0.968);
+        fill: #efecf5;  
+    }
+
+    .hero-label {
+        font-size: 22px;
+        color: rgb(16, 12, 7);
+        margin-left: 30px;
+    }
+    .hero-input {
+        width: 90%;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+    }
+
+    .type-submit{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        padding: 10px;
+        border: none;
+        background-color: #d8670b;
+        color: #f1e9e9;
     }
 
     /* About start */
@@ -130,16 +170,6 @@
 
     .about-company-desc {
         font-size: 25px;
-    }
-
-    .about-company-desc-recording{
-        display: unset;
-    }
-
-    .about-company-desc-recording{
-        font-family: 'Cormorant Garamond';
-        font-size: 20px;
-        margin-top: 20px;
     }
 
     .advantages-container{

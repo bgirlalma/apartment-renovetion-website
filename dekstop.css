@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1181px) {
     .burder-type {
         display: none;
     }
@@ -12,7 +12,6 @@
     }
 
     .container{
-        max-width: 1200px;
         padding: 20px 20px 0 20px;
     
         display: flex;
@@ -66,6 +65,221 @@
            font-size: 25px;
            color: antiquewhite;
            margin-left: 20px;
+           transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
         }
 
+        .contacts-link:hover{
+            color: rgb(238, 14, 14);
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
+        }
+
+      #header-link-hover:hover{
+        color: rgb(238, 14, 14);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
+      }
+
+        #open-modal-deckstop{
+            cursor: pointer;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
+        }
+
+        #open-modal-deckstop:hover{
+            color: rgb(238, 14, 14);
+           
+        }
+        /* Header end */
+
+        /* Slider start*/
+        .slider-container{
+        width: 1300px;
+        height: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        #slide{
+            width: max-content;
+            margin-top: 50px;
+        }
+        .item-slide{
+        width: 250px;
+        height: 350px;
+        }
+
+        .item-slide:nth-child(3){
+            left: 40%;
+        }
+        
+        .item-slide:nth-child(4){
+            left: calc(40% + 280px);
+        }
+        
+        .item-slide:nth-child(5){
+            left: calc(40% + 560px);
+        }
+        
+        .item-slide:nth-child(n + 6){
+            left: calc(50% + 1120px);
+            opacity: 0;
+            display: none;
+        }
+
+        .item-slide .content{
+            top: 50%;
+            left: 70px;
+            width: 400px;
+        }
+
+        .content-title{
+            font-size: 40px;
+        }
+        
+        .content-desc{
+            font-size: 25px;
+        }
+
+        #type-prev{
+            width: 50px;
+            height: 50px;
+            border: 1px solid #808080;
+            border-radius: 50%;
+            background-color: 	#FAFAD2;
+            color: #cc0000;
+            margin-right: 10px;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
+        }
+
+        #type-prev:hover{
+            background-color: rgb(15, 112, 186);
+            color: #FAFAD2;
+        }
+        
+        #type-next{
+            width: 50px;
+            height: 50px;
+            border: 1px solid #808080;
+            border-radius: 50%;
+            background-color: 	#FAFAD2;
+            color: #cc0000;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
+        }
+
+        #type-next:hover{
+            background-color: rgb(15, 112, 186);
+            color: #FAFAD2;
+        }
+
+        /* Slide end */
+
+        /* Hero modal and nav "Дізнатися ціну" start */
+        .hero-mobile-menu {
+            width: 600px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgb(239, 239, 225);
+            border-radius: 20px;
+        }
+
+        .hero-menu-close {
+            border: none;
+            background-color: rgba(251, 115, 4, 0.968);
+            fill: #efecf5; 
+            padding: 10px; 
+            margin-top: 20px;
+            margin-right: 20px;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
+        }
+
+        .hero-menu-close:hover{
+            background-color: rgba(251, 33, 4, 0.968);
+            cursor: pointer;
+        }
+
+        .hero-label {
+            font-size: 24px;
+            color: rgb(16, 12, 7);
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .hero-input {
+            font-weight: normal;
+            font-size: 22px;
+            margin-bottom: 15px;
+            padding: 8px 8px 8px 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .type-submit{
+            font-size: 20px;
+            max-width: unset;
+            width: 40%;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Hero modal and nav "Дізнатися ціну" end */
+
+        /* About and Advantages start */
+        .about-company {
+            padding: 20px;
+        }
+
+        .container.about{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-company-title {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+        .about-company-desc {
+            max-width: 1200px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .advantages-info{
+            display: flex;
+        }
+
+        .advantages-title {
+            font-size: 28px;
+            margin-top: 30px;
+
+        }
+        .advantages-container {
+            max-width: unset;
+        }
+
+        .advantages-list {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: unset;
+            margin-right: 60px;
+        }
+        .advantages-svg {
+            width: 50px;
+            height: 50px;
+            margin-right: unset;
+            margin-bottom: 15px;
+            margin-top: 30px;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.5s;
+        }
+
+        .advantages-svg:hover{
+            fill: #f96a0a;
+        }
+
+        .advantages-list-title {
+            font-size: 20px;
+        }
+
+        /* About and Advantages end */
+
+      
 }

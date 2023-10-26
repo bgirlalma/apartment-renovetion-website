@@ -30,13 +30,13 @@
                 <!-- Навігація -->
                 <ul class="header-nav none">
                     <li class="header-list">
-                        <a class="header-link" href="">Про компанію</a>
+                        <a class="header-link" id="header-link-hover" href="#about">Про компанію</a>
                     </li>
                     <li class="header-list">
-                        <a class="header-link" href="">Послуги</a>
+                        <a class="header-link" id="header-link-hover" href="#advantages">Наші переваги</a>
                     </li>
                     <li class="header-list">
-                        <a class="header-link" href="">Дізнатися ціну</a>
+                        <a class="header-link" id="open-modal-deckstop">Дізнатися ціну</a>
                     </li>
                 </ul>
             </nav>
@@ -45,19 +45,19 @@
             <address class="address-contacts none">
                 <ul class="contacts">
                     <li class="contacts-list">
-                        <a href="#" class="contacts-link">
-                            <svg width="32" height="22" fill="antiquewhite" >
+                        <a href="mailto:Martynenkosergej48@gmail.com" class="contacts-link">
+                            <svg width="32" height="22" fill="antiquewhite">
                                 <use href="./Image/symbol-defs.svg#icon-envelop"></use>
                             </svg>
-                            <span>mail</span>
+                            <span>gmail</span>
                         </a>
                     </li>
                     <li class="contacts-list">
-                        <a href="#" class="contacts-link">
-                            <svg width="32" height="22" fill="antiquewhite" >
+                        <a href="tel:+380967008872" class="contacts-link">
+                            <svg width="32" height="22" fill="antiquewhite">
                                 <use href="./Image/symbol-defs.svg#icon-phone"></use>
                             </svg>
-                            <span>number</span>
+                            <span>380967008872</span>
                         </a>
                     </li>
                 </ul>
@@ -82,7 +82,7 @@
                 <a class="header-link-mobile-menu" href="#advantages">Наші переваги</a>
             </li>
             <li class="header-list-mobile-menu">
-                <a class="header-link-mobile-menu header-none" href="" >Дізнатися ціну</a>
+                <a class="header-link-mobile-menu header-none">Дізнатися ціну</a>
             </li>
         </ul>
         </nav>
@@ -95,7 +95,7 @@
                         <svg class="svg-mobile" width="32" height="22" fill="blue">
                             <use href="./Image/symbol-defs.svg#icon-envelop"></use>
                         </svg>
-                        <span>Martynenkosergej48@gmail.com</span>
+                        <span>gmail</span>
                     </a>
                 </li>
                 <li class="contacts-list-mobile-menu">
@@ -116,7 +116,7 @@
 
     <!-- Hero Section start -->
     <section class="section-hero">
-    <div class="container hero">
+    <div class="container">
         <div class="slider-container">
             <div id="slide">
              <div class="item-slide" style="background-image: url(/Image/wall-decoration.jpg);">
@@ -165,7 +165,7 @@
          </div>
                 </div>
 
-                <!-- Modal Hero start -->
+                <!-- Modal Hero start and nav "Дізнатись ціну" -->
                 <div class="backdrop-hero is-hidden-hero">
                     <div class="hero-mobile-menu">
             <button class="hero-menu-close" type="button">
@@ -186,64 +186,59 @@
     </section>
 
     <!-- About Company start -->
-    <section class="about-company">
-        <div class="container about">
-            <h2 class="about-company-title"><a name="about">Про компанію</a></h2>
-            <p class="about-company-desc">Свою роботу розпочала з 2005 року. Основними об'єктами були квартири, офіси, приватні будинки, магазини. Наші готові об'єкти є в різних містах, Київ, Львів, Дніпро, Нікополь, в далекому минулому Мінськ, Калініград, Москва(на сьогоднішній день роботу в цих країнах зупинено). Ми спеціалізуємося на різних видах внутрішньої віділки приміщень. Займаємося об'єктами під ключ або конкретними видами робіт. Швидкість та якість-це про нас!</p>
-            <p class="about-company-desc-recording desc-none">
-                Щоб задати більше питань, ви можете залишити свій контактних номер телефону і нас спеціалість зв'яжиться з вами впродовж години
-            </p>
+<section class="about-company">
+<div class="container about">
+<h2 class="about-company-title"><a name="about">Про компанію</a></h2>
+<p class="about-company-desc">Свою роботу розпочала з 2005 року. Основними об'єктами були квартири, офіси, приватні будинки, магазини. Наші готові об'єкти є в різних містах, Київ, Львів, Дніпро, Нікополь, в далекому минулому Мінськ, Калініград, Москва(на сьогоднішній день роботу в цих країнах зупинено). Ми спеціалізуємося на різних видах внутрішньої віділки приміщень. Займаємося об'єктами під ключ або конкретними видами робіт. Швидкість та якість-це про нас!</p>
 
-            <button id="hero-type" class="hero-mobile-type type-none">Отримати консультацію</button>
+<div class="advantages">
+<h2 class="advantages-title"><a name="advantages">Наші переваги</a></h2>
+<div class="advantages-container">
+<ul class="advantages-info">
+<li class="advantages-list">
+<svg class="advantages-svg" width="40" height="40">
+<use class="advantages-icon" href="./Image/symbol-defs.svg#icon-home"></use>
+</svg>
 
-            <div class="advantages">
-                <h2 class="advantages-title"><a name="advantages">Наші переваги</a></h2>
-                <div class="advantages-container">
-                    <ul class="advantages-info">
-                        <li class="advantages-list">
-                            <svg class="advantages-svg" width="40" height="40">
-                                <use class="advantages-icon" href="./Image/symbol-defs.svg#icon-home"></use>
-                            </svg>
+<h3 class="advantages-list-title">Робота під ключ</h3>
+</li>
 
-                            <h3 class="advantages-list-title">Робота під ключ</h3>
-                        </li>
+<li class="advantages-list">
+<svg class="advantages-svg" width="40" height="40">
+<use class="advantages-icon" href="./Image/symbol-defs.svg#icon-profile"></use>
+</svg>
 
-                        <li class="advantages-list">
-                            <svg class="advantages-svg" width="40" height="40">
-                                <use class="advantages-icon" href="./Image/symbol-defs.svg#icon-profile"></use>
-                            </svg>
+<h3 class="advantages-list-title">Оформлення договору на<br>великі проекти</h3>
+</li>
 
-                            <h3 class="advantages-list-title">Оформлення договору на<br>великі проекти</h3>
-                        </li>
+<li class="advantages-list">
+<svg class="advantages-svg" width="40" height="40">
+<use class="advantages-icon" href="./Image/symbol-defs.svg#icon-paint-format"></use>
+</svg>
 
-                        <li class="advantages-list">
-                            <svg class="advantages-svg" width="40" height="40">
-                                <use class="advantages-icon" href="./Image/symbol-defs.svg#icon-paint-format"></use>
-                            </svg>
+<h3 class="advantages-list-title">Якість роботи</h3>
+</li>
 
-                            <h3 class="advantages-list-title">Якість роботи</h3>
-                        </li>
+<li class="advantages-list">
+<svg class="advantages-svg" width="40" height="40">
+<use class="advantages-icon" href="./Image/symbol-defs.svg#icon-connection"></use>
+</svg>
 
-                        <li class="advantages-list">
-                            <svg class="advantages-svg" width="40" height="40">
-                                <use class="advantages-icon" href="./Image/symbol-defs.svg#icon-connection"></use>
-                            </svg>
+<h3 class="advantages-list-title">Швидкість виконання роботи</h3>
+</li>
 
-                            <h3 class="advantages-list-title">Швидкість виконання роботи</h3>
-                        </li>
+<li class="advantages-list">
+<svg class="advantages-svg" width="40" height="40">
+<use class="advantages-icon" href="./Image/symbol-defs.svg#icon-location2"></use>
+</svg>
 
-                        <li class="advantages-list">
-                            <svg class="advantages-svg" width="40" height="40">
-                                <use class="advantages-icon" href="./Image/symbol-defs.svg#icon-location2"></use>
-                            </svg>
-
-                            <h3 class="advantages-list-title">Мобільність.<br>Працюємо по всій країні</h3>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<h3 class="advantages-list-title">Мобільність.<br>Працюємо по всій країні</h3>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
     <!-- About Company end -->
 
     <!-- Footer start -->
