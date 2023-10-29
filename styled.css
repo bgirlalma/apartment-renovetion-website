@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6{
     text-decoration: none;
     font-family: 'Cormorant Garamond';
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     color: #690ad5;
 }
 
@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6{
 
 .contacts-link-mobile-menu{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     color: #690ad5;
 }
 
@@ -160,11 +160,11 @@ h1, h2, h3, h4, h5, h6{
 /* Slider start */
 .slider-container{
     position: relative;
-width: 700px;
-height: 600px;
-background-color: #c2c2d6;
-box-shadow: 0 30px 50px #dbdbdb;
-border-radius: 20px;
+    width: 700px;
+    height: 600px;
+    background-color: #c2c2d6;
+    box-shadow: 0 30px 50px #dbdbdb;
+    border-radius: 20px;
 }
 #slide{
     width: max-content;
@@ -318,7 +318,7 @@ border-radius: 20px;
 .hero-mobile-title {
     font-family: 'Cormorant Garamond';
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
     color: antiquewhite;
 
     margin: 0;
@@ -327,7 +327,7 @@ border-radius: 20px;
     font-family: 'Cormorant Garamond';
     font-size: 18px;
     color: antiquewhite;
-    margin: 10px 0 20px;
+    margin: 20px 0 40px;
 }
 .hero-mobile-type {
     font-family: 'Cormorant Garamond';
@@ -438,7 +438,7 @@ border-radius: 20px;
 
 .about-company-title {
     font-family: 'Cormorant Garamond';
-    font-size: 20px;
+    font-size: 28px;
     color: antiquewhite;
     display: flex;
     justify-content: center;
@@ -486,7 +486,7 @@ border-radius: 20px;
 
 .advantages-list-title {
     font-family: 'Cormorant Garamond';
-    font-size: 16px;
+    font-size: 20px;
     color: antiquewhite;
     display: flex;
     justify-content: center;

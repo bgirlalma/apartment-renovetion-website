@@ -11,6 +11,10 @@
         margin-right: auto;
     }
 
+    .mobile-navigation{
+        width: 100%;
+    }
+
     .header-link-mobile-menu.header-none{
         display: none;
     }
@@ -20,6 +24,14 @@
     }
     .address-contacts {
         display: none;
+    }
+
+    .mobile-menu-contacts{
+        width: 100%;
+    }
+
+    .contacts-link-mobile-menu{
+        font-size: 32px;
     }
     
     /* Hero section */
@@ -38,13 +50,13 @@
     }
 
     .hero-mobile-title {
-        font-size: 18px;
+        font-size: 38px;
     }
     .hero-mobile-desc {
-        font-size: 14px;
+        font-size: 20px;
     }
     .hero-mobile-type {
-        font-size: 12px;
+        font-size: 18px;
     }
 }
 @media screen and (min-width: 420px) and (max-width: 767px) {
@@ -61,7 +73,7 @@
     }
 
     .logo-link{
-       font-size: 40px;
+       font-size: 50px;
     }
 
     .burger-svg{
@@ -118,16 +130,16 @@
     }
 
     .hero-mobile-title {
-        font-size: 28px;
+        font-size: 42px;
     }
 
     .hero-mobile-desc {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .hero-mobile-type {
-        font-size: 18px;
-        padding: 15px 15px;
+        font-size: 22px;
+        padding: 20px 20px;
     }
 
     /* Modal Hero start */
@@ -144,11 +156,11 @@
 
     /* About section start */
     .about-company-title {
-        font-size: 30px;
+        font-size: 42px;
     }
 
     .about-company-desc {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .advantages-container {
@@ -161,18 +173,18 @@
     }
 
     .advantages-title {
-        font-size: 30px;
+        font-size: 42px;
     }
 
     .advantages-svg {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
         fill: #c2c2d6;
     }
 
     .advantages-list-title {
-        font-size: 18px;
+        font-size: 20px;
     }
    
     .advantages-list {
