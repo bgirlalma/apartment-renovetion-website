@@ -1,18 +1,25 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "hammerjs": "^2.0.8",
-    "nodemailer": "^6.9.7"
+    "joi": "^17.11.0",
+    "mongoose": "^8.0.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.2"
   },
-  "name": "apartment-renovation-website",
+  "name": "yes",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node sendEmail.js"
+    "start": " node ./server.js",
+    "start:dev": "nodemon ./server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
   "description": ""
 }
