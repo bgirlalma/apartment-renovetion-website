@@ -1,3 +1,4 @@
+require("dotenv").config();
 const User = require("../models/user");
 const sendEmail = require("../helpers/user");
 const { joiSchema } = require("../schemas/joiSchemasUser");
@@ -8,16 +9,18 @@ mongoose
   .connect(BASE_URL)
   .then(() => console.info("Database connection successful"))
   .catch((error) => {
-    console.error(error);
+    console.error("Error connecting to the database:", error);
     process.exit(1);
   });
 
 async function postSendEmail(req, res, next) {
-  const { name, email, phone, message } = req.body;
+  const { name, phone } = req.body;
+  console.log("Name:", name);
+  console.log("Phone:", phone);
 
   try {
     // Валидация данных пользователя
-    const validation = joiSchema.validate({ name, email, phone });
+    const validation = joiSchema.validate({ name, phone });
 
     if (validation.error) {
       console.log(
@@ -33,14 +36,21 @@ async function postSendEmail(req, res, next) {
     }
 
     // Создание пользователя
-    const user = await User.create({ name, email, phone });
+    const user = await User.create({ name, phone });
+    if (!user) {
+      return res
+        .status(500)
+        .send({ message: "Ошибка при создании пользователя" });
+    }
 
     // Отправка электронного письма
-    const emailMessage = {
-      subject: "Новое сообщение от пользователя",
-      text: `От ${user.email}n/nСообщение: ${message}`,
-    };
+   const emailMessage = {
+     subject: "Новое сообщение от пользователя",
+     name: user.name,
+     phone: user.phone,
+   };
 
+    console.log(`Отправка письма: От ${user.name}, Номер: ${user.phone}`);
     await sendEmail(emailMessage);
     res.status(201).send(user);
   } catch (error) {

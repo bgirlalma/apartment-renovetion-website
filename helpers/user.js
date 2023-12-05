@@ -8,13 +8,13 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-async function sendEmail(email) {
+async function sendEmail(user) {
 
   try {
     const mailOptions = {
-      from: email,
       to: process.env.EMAIL_USERNAME,
-      subject: "New user"
+      subject: "New user",
+      text: `Имя пользователя: ${user.name}\nНомер телефона: ${user.phone}`,
     };
 
     await transporter.sendMail(mailOptions)
