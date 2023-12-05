@@ -5,6 +5,7 @@
     "express": "^4.18.2",
     "hammerjs": "^2.0.8",
     "joi": "^17.11.0",
+    "mongodb": "^6.3.0",
     "mongoose": "^8.0.2",
     "morgan": "^1.10.0",
     "nodemailer": "^6.9.7",
@@ -20,6 +21,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "description": ""
 }
