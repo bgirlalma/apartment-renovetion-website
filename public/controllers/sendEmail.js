@@ -44,11 +44,11 @@ async function postSendEmail(req, res, next) {
     }
 
     // Отправка электронного письма
-   const emailMessage = {
-     subject: "Новое сообщение от пользователя",
-     name: user.name,
-     phone: user.phone,
-   };
+    const emailMessage = {
+      subject: "Новое сообщение от пользователя",
+      name: user.name,
+      phone: user.phone,
+    };
 
     console.log(`Отправка письма: От ${user.name}, Номер: ${user.phone}`);
     await sendEmail(emailMessage);
