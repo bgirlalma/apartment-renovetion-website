@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./public/css/tablet.css">
     <link rel="stylesheet" href="./public/css/dekstop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="path/to/node_modules/sweetalert2/dist/sweetalert2.min.css">
 </head>
 <body>
     <header>
@@ -173,7 +174,7 @@
                 <use class="icon-close" href="./public/Image/symbol-defs.svg#icon-cross"></use>
                 </svg>
             </button>
-            <form class="hero-form">
+            <form class="hero-form" action="http://localhost:3000/api/users/dispatch" method="post">
                 <label class="hero-label" for="name">Ваше ім'я</label>
                 <input class="hero-input" id="name" type="text">
                 <label class="hero-label" for="number">Номер телефону</label>
@@ -253,5 +254,6 @@
     <script src="./public/Js/modal-burger.js"></script>
     <script src="./public/Js/slider.js"></script>
     <script src="./public/Js/hero-modal-menu.js"></script>
+    <script src="path/to/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>

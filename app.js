@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.static(path.join((__dirname, "public"))));
 
-app.use("/api", cors(), routers);
+app.use("/api", routers);
 
 app.use((req, res) => {
     res.status(404).send({ message: "Not found" });

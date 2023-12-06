@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener("DOMContentLoaded", function () {
   const buttonOpen = document.getElementById("hero-type");
   const buttonClose = document.querySelector(".hero-svg-menu-close");
   const modal = document.querySelector(".hero-mobile-menu");
@@ -22,39 +22,49 @@ document.addEventListener('DOMContentLoaded', function(){
     document.body.style.overflow = "";
   }
 
-    // Добавим обработчик для отправки формы
-    const form = this.querySelector(".hero-form");
+  // Добавим обработчик для отправки формы
+  const form = document.querySelector(".hero-form");
 
-// вешаем обработчик события
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
+  // вешаем обработчик события
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-      // Собираем данные из формы
-      const formData = {
-        name: document.getElementById("name").value,
-        phone: document.getElementById("number").value,
-        };
-        
-        fetch("api/users/dispatch", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        })
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-          })
-          .then((data) => {
-            console.log("Успешно отправлено:", data);
-            // Добавьте код для отображения уведомления об успешной отправке, если необходимо
-          })
-          .catch((error) => {
-            console.error("Ошибка отправки данных:", error);
-            // Добавьте код для отображения уведомления об ошибке, если необходимо
-          });
+    // Собираем данные из формы
+    const formData = {
+      name: document.getElementById("name").value,
+      phone: document.getElementById("number").value,
+    };
+
+    fetch("http://localhost:3000/api/users/dispatch", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
     })
-})
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // Закройте модальное окно
+        if (data) {
+          Swal.fire({
+            icon: "success",
+            title: "Успешно отправлено!",
+            text: "Ваше письмо успешно отправлено.",
+          });
+          closeModal()
+         
+        }
+
+        // Добавьте код для отображения уведомления об успешной отправке, если необходимо
+      })
+      .catch((error) => {
+        console.error("Ошибка отправки данных:", error);
+        // Добавьте код для отображения уведомления об ошибке, если необходимо
+      });
+  });
+});
