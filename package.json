@@ -11,6 +11,7 @@
     "nodemailer": "^6.9.7",
     "nodemon": "^3.0.2",
     "notiflix": "^3.2.6",
+    "simplelightbox": "^2.14.2",
     "sweetalert2": "^11.10.1"
   },
   "name": "yes",
