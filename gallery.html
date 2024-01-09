@@ -22,11 +22,76 @@
     <link rel="stylesheet" href="./public/css/dekstop.css" />
   </head>
   <body>
-    <section>
-        <div class="container">
+      <header>
+      <div class="container">
+        <!-- Версія для планшета та комп'ютера -->
+        <nav class="navigation">
+          <a href="./index.html" class="logo-link"
+            >Р<span class="web-logo">і</span>O</a
+          >
+
+          <!-- Меню -->
+          <button class="burder-type" id="open-menu">
+            <svg class="burger-svg" width="32" height="32">
+              <use
+                class="burger-icon"
+                href="./public/Image/symbol-defs.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+          <!-- Навігація -->
+          <ul class="header-nav none">
+            <li class="header-list">
+              <a class="header-link" id="header-link-hover" href="./index.html#about"
+                >Про компанію</a
+              >
+            </li>
+            <li class="header-list">
+              <a class="header-link" id="header-link-hover" href="./index.html#advantages"
+                >Наші переваги</a
+              >
+            </li>
+
+             <li class="header-list">
+              <a class="header-link" id="header-link-hover" href="./gallery.html">Галерея</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Контакти -->
+        <address class="address-contacts none">
+          <ul class="contacts">
+            <li class="contacts-list">
+              <a
+                href="mailto:martynenkosergej48@gmail.com"
+                class="contacts-link"
+              >
+                <svg width="32" height="22" fill="antiquewhite">
+                  <use href="./public/Image/symbol-defs.svg#icon-envelop"></use>
+                </svg>
+                <span>Gmail</span>
+              </a>
+            </li>
+            <li class="contacts-list">
+              <a href="tel:+380992949200" class="contacts-link">
+                <svg width="32" height="22" fill="antiquewhite">
+                  <use href="./public/Image/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <span>38(099)-294-92-00</span>
+              </a>
+            </li>
+          </ul>
+        </address>
+           </div>
+    </header>
+  
             <ul class="gallery"></ul>
-        </div>
-    </section>
+    
+
+
+        <!-- Modal Hero end -->
     <script src="./public/Js/gallery.js" type="module"></script>
+    <script src="./public/Js/modal-burger.js" type="module"></script>
+
   </body>
 </html>
