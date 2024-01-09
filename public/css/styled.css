@@ -269,22 +269,20 @@ border-radius: 20px;
     width: 100%;
 }
 
+.slider-btn button i {
+    font-size: 24px; 
+}
+
 #type-prev{
-    width: 50px;
-    height: 50px;
-    border: 1px solid #808080;
-    border-radius: 50%;
-    background-color: 	#FAFAD2;
+    border: none;
+    background-color: inherit;
     color: #cc0000;
     margin-right: 10px;
 }
 
 #type-next{
-    width: 50px;
-    height: 50px;
-    border: 1px solid #808080;
-    border-radius: 50%;
-    background-color: 	#FAFAD2;
+    border: none;
+    background-color: inherit;
     color: #cc0000;
 }
 /* Slider end */
@@ -347,7 +345,6 @@ border-radius: 20px;
 }
 
 /* Modal Hero  start */
-
 .backdrop-hero {
     position: fixed;
     z-index: 1;
