@@ -15,14 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Pathway+Gothic+One&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="./public/css/styled.css" />
-    <link rel="stylesheet" href="./public/css/mobile.css" />
-    <link rel="stylesheet" href="./public/css/tablet.css" />
-    <link rel="stylesheet" href="./public/css/dekstop.css" />
+    <link rel="stylesheet" href="/public/css/lightbox.css" />
+    <link rel="stylesheet" href="/public/css/common.css" />
+    <link rel="stylesheet" href="/public/css/styled.css" />
+    <link rel="stylesheet" href="/public/css/mobile.css" />
+    <link rel="stylesheet" href="/public/css/tablet.css" />
+    <link rel="stylesheet" href="/public/css/dekstop.css" />
   </head>
   <body>
-      <header>
+    <header>
       <div class="container">
         <!-- Версія для планшета та комп'ютера -->
         <nav class="navigation">
@@ -42,18 +43,29 @@
           <!-- Навігація -->
           <ul class="header-nav none">
             <li class="header-list">
-              <a class="header-link" id="header-link-hover" href="./index.html#about"
+              <a
+                class="header-link"
+                id="header-link-hover"
+                href="./index.html#about"
                 >Про компанію</a
               >
             </li>
             <li class="header-list">
-              <a class="header-link" id="header-link-hover" href="./index.html#advantages"
+              <a
+                class="header-link"
+                id="header-link-hover"
+                href="./index.html#advantages"
                 >Наші переваги</a
               >
             </li>
 
-             <li class="header-list">
-              <a class="header-link" id="header-link-hover" href="./gallery.html">Галерея</a>
+            <li class="header-list">
+              <a
+                class="header-link"
+                id="header-link-hover"
+                href="./gallery.html"
+                >Галерея</a
+              >
             </li>
           </ul>
         </nav>
@@ -82,16 +94,14 @@
             </li>
           </ul>
         </address>
-           </div>
+      </div>
     </header>
-  
-            <ul class="gallery"></ul>
-    
 
+    <div class="container"><ul class="gallery"></ul></div>
 
-        <!-- Modal Hero end -->
-    <script src="./public/Js/gallery.js" type="module"></script>
-    <script src="./public/Js/modal-burger.js" type="module"></script>
-
+    <!-- Modal Hero end -->
+    <script src="/public/Js/lightbox-plus-jquery.js"></script>
+    <script src="/public/Js/gallery.js" type="module"></script>
+    <script src="/public/Js/hero-modal-menu.js" type="module"></script>
   </body>
 </html>

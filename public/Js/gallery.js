@@ -1,11 +1,9 @@
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.esm";
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".gallery");
 
-document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector(".gallery");
-
+  try {
     // Открімуємо линку на зображення
-    const imageFolder = "public/Image/gallery-photo";
+    const imageFolder = "/public/Image/gallery-photo";
     const imageFiles = [
       "bathroom-grey.jpg",
       "bathroom.jpg",
@@ -13,26 +11,28 @@ document.addEventListener('DOMContentLoaded', function () {
       "figured-ceiling.jpg",
       "hallway.jpg",
       "wall-decoration.jpg",
+      "arch.jpg",
+      "bathroom-ceiling.jpg",
+      "interior-door.jpg"
     ];
 
     // створюємо HTML розмітку для галереї
     const galleryHtml = imageFiles
       .map(
         (filename) =>
-          `<li>
-    <a href="${imageFolder}/${filename}">
+          ` 
+    <li>
+    <a href="${imageFolder}/${filename}" data-lightbox="roadtrip">
     <img src="${imageFolder}/${filename}" alt="gallery"/></a></li>`
       )
       .join("");
 
     container.innerHTML = galleryHtml;
-
-    new SimpleLightbox(".gallery a", {
-      captionDelay: 250,
-      captionsData: "alt",
-      captionPosition: "bottom",
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: true,
     });
-
-    console.log(galleryHtml);
-
-})
+  } catch (error) {
+    console.error("Ошибка при создании галереи:", error);
+  }
+});
