@@ -17,6 +17,15 @@
    
   }
 
+  .burder-type{
+display: none;
+}
+
+  .swiper-container{
+  display: none;
+}
+
+
   /* Header */
 
   .logo-link {
@@ -42,7 +51,7 @@
   .header-link {
     text-decoration: none;
     font-family: "Cormorant Garamond";
-    font-size: 20px;
+    font-size: 15px;
     color: antiquewhite;
   }
 
@@ -60,71 +69,10 @@
   .contacts-link {
     text-decoration: none;
     font-family: "Cormorant Garamond";
-    font-size: 20px;
+    font-size: 15px;
     color: antiquewhite;
   }
 
-  /* Hero slider */
-  .slider-container {
-    width: 700px;
-    height: 500px;
-    box-shadow: 0 20px 20px #dbdbdb;
-  }
-  #slide {
-    margin-top: 30px;
-  }
-
-  .item-slide:nth-child(3) {
-    left: 50%;
-  }
-
-  .item-slide:nth-child(4) {
-    left: calc(50% + 220px);
-  }
-
-  .item-slide:nth-child(5) {
-    left: calc(50% + 440px);
-    opacity: 0;
-  }
-
-  .item-slide .content {
-    width: 250px;
-  }
-
-  .content-title {
-    font-size: 24px;
-  }
-
-  .content-desc {
-    font-size: 18px;
-  }
-
-  .slider-btn button i {
-    font-size: 24px;
-  }
-
-  #type-prev {
-    width: 40px;
-    height: 40px;
-  }
-
-  #type-next {
-    width: 40px;
-    height: 40px;
-  }
-
-  .burder-type {
-    display: none;
-  }
-
-  .backdrop {
-    display: none;
-  }
-
-  /* Hero mobile */
-  .hero-mobile {
-    display: none;
-  }
 
   /* Hero modal and nav "Дізнатися ціну" start */
   .hero-mobile-menu {
@@ -167,6 +115,10 @@
     background-color: #d8670b;
     color: #f1e9e9;
   }
+
+  .mobile-content {
+  width: unset;
+}
 
   /* About start */
 
