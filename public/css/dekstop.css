@@ -89,14 +89,20 @@
   /* Header end */
 
   .swiper {
-  width: 100%;
-  height: 400px; /* Высота вашего слайдера */
+  width: 1000px;
+  height: 600px; /* Высота вашего слайдера */
+  border-radius: 20px;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #292727;
+}
+
+.swiper-slide .img{
+width: 100%;
+display: block;
 }
 
 /* Дополнительные стили для пагинации, навигации и полосы прокрутки */
@@ -193,7 +199,7 @@
 
   /* About and Advantages start */
   .about-company {
-    padding: 20px;
+    padding: unset;
   }
 
   .container.about {
@@ -206,7 +212,7 @@
     margin-top: 30px;
   }
   .about-company-desc {
-    max-width: 1200px;
+    max-width: 1000px;
     font-size: 20px;
     margin-top: 30px;
   }
@@ -227,7 +233,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: unset;
-    margin-right: 60px;
+    margin-right: 50px;
+  }
+
+  .advantages-list:last-child{
+    margin-right: 0;
   }
   .advantages-svg {
     width: 50px;
