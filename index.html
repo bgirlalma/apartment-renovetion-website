@@ -22,10 +22,9 @@
     <link rel="stylesheet" href="./public/css/tablet.css" />
     <link rel="stylesheet" href="./public/css/dekstop.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="/bower_components/sweetalert2/dist/sweetalert2.min.css">
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <header>
@@ -164,82 +163,48 @@
     </header>
 
     <!-- Hero Section start -->
-    <section class="section-hero">
-      <div class="container">
-        <div class="slider-container">
-          <div id="slide">
-            <div
-              class="item-slide"
-              style="
-                background-image: url(/public/Image/slider-photo/whitekitchen.jpg);
-              "
-            >
-              <div class="content"></div>
-            </div>
+ <section>
+  <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="./public/Image/slider-photo/bedroom.jpg" alt="">
+    </div>
+    <div class="swiper-slide">
+      <img src="./public/Image/slider-photo/brownlivingroom.jpg" alt="">
+    </div>
+    <div class="swiper-slide">
+      <img src="./public/Image/slider-photo/greenlivingroom.jpg" alt="">
+    </div>
+     <div class="swiper-slide">
+      <img src="./public/Image/slider-photo/greylivingroom.jpg" alt="">
+    </div>
+     <div class="swiper-slide">
+      <img src="./public/Image/slider-photo/living-room.jpg" alt="">
+    </div>
+     <div class="swiper-slide">
+      <img src="./public/Image/slider-photo/redlivingroom.jpg" alt="">
+    </div>
+     <div class="swiper-slide">
+      <img src="./public/Image/slider-photo/stilnie-intereri-dlya.jpg" alt="">
+    </div>
+     <div class="swiper-slide">
+      <img src="./public/Image/slider-photo/whitekitchen.jpg" alt="">
+    </div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
-            <div
-              class="item-slide"
-              style="
-                background-image: url(/public/Image/slider-photo/brownlivingroom.jpg);
-              "
-            >
-              <div class="content"></div>
-            </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 
-            <div
-              class="item-slide"
-              style="
-                background-image: url(/public/Image/slider-photo/living-room.jpg);
-              "
-            >
-              <div class="content"></div>
-            </div>
-            <div
-              class="item-slide"
-              style="
-                background-image: url(/public/Image/slider-photo/stilnie-intereri-dlya.jpg);
-              "
-            >
-              <div class="content"></div>
-            </div>
-
-            <div
-              class="item-slide"
-              style="
-                background-image: url(/public/Image/slider-photo/greenlivingroom.jpg);
-              "
-            >
-              <div class="content"></div>
-            </div>
-
-            <div
-              class="item-slide"
-              style="
-                background-image: url(/public/Image/slider-photo/greylivingroom.jpg);
-              "
-            >
-              <div class="content"></div>
-            </div>
-
-            <div
-              class="item-slide"
-              style="
-                background-image: url(/public/Image/slider-photo/redlivingroom.jpg);
-              "
-            >
-              <div class="content"></div>
-            </div>
-
-            <div class="slider-btn">
-              <button id="type-prev">
-                <i class="fa-solid fa-angles-left"></i>
-              </button>
-              <button id="type-next">
-                <i class="fa-solid fa-angles-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
 
         <!-- Mobile version -->
         <div class="hero-mobile">
@@ -377,9 +342,10 @@
       </div>
     </footer>
     <script src="./public/Js/modal-burger.js"></script>
-    <script src="./public/Js/slider.js"></script>
     <script src="./public/Js/hero-modal-menu.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-    <script src="/bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+    <!-- Подключаем JS скрипт Swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Инициализация Swiper -->
+  <script src="public/Js/slider.js" type="module"></script>
   </body>
 </html>
