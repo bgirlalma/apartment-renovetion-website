@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   try {
     // Открімуємо линку на зображення
-    const imageFolder = "/public/Image/gallery-photo";
+    const imageFolder = "./public/Image/gallery-photo";
     const imageFiles = [
       "bathroom-grey.jpg",
       "bathroom.jpg",
